@@ -1,5 +1,7 @@
 package mmm.tragicVillager;
 
+import java.io.File;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,7 +32,8 @@ public class TragicVillager {
 	public static Item itemVillagerRaw;
 	public static Item itemVillagerCooked;
 	
-	protected static Configuration config = null;
+//	protected static Configuration config = null;
+	protected static File configFile;
 
 
 	@Mod.EventHandler
@@ -43,12 +46,13 @@ public class TragicVillager {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent pEvent) {
 		// コンフィグの読み出し
-		config = new Configuration(pEvent.getSuggestedConfigurationFile());
-		config.load();
-		dropTrade	= config.get("Villager", "dropTrade", true).getBoolean(true);
-		dropFlesh	= config.get("Villager", "dropFlesh", true).getBoolean(true);
-		dropExp		= config.get("Villager", "dropExp", true).getBoolean(true);
-		config.save();
+		configFile = pEvent.getSuggestedConfigurationFile();
+		Configuration lconf = new Configuration(configFile);
+		lconf.load();
+		dropTrade	= lconf.get("Villager", "dropTrade", true).getBoolean(true);
+		dropFlesh	= lconf.get("Villager", "dropFlesh", true).getBoolean(true);
+		dropExp		= lconf.get("Villager", "dropExp", true).getBoolean(true);
+		lconf.save();
 		
 		// アイテムやブロックの宣言はこっちらしい。
 		// 村人虐殺どろっぴ
@@ -59,12 +63,14 @@ public class TragicVillager {
 	}
 
 	public static void saveConf() {
-		if (config == null) return;
+		if (configFile == null) return;
 		// 現在の設定値を保存
-		config.get("Villager", "dropTrade", true).set(dropTrade);
-		config.get("Villager", "dropFlesh", true).set(dropFlesh);
-		config.get("Villager", "dropExp", true).set(dropExp);
-		config.save();
+		Configuration lconf = new Configuration(configFile);
+		lconf.load();
+		lconf.get("Villager", "dropTrade", true).set(dropTrade);
+		lconf.get("Villager", "dropFlesh", true).set(dropFlesh);
+		lconf.get("Villager", "dropExp", true).set(dropExp);
+		lconf.save();
 	}
 
 	@Mod.EventHandler

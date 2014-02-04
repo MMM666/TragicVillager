@@ -1,5 +1,10 @@
 version = "1.7.2-1"
 
+def defaultEncoding = 'UTF-8'
+compileJava {
+    options.encoding = defaultEncoding
+}
+
 processResources {
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
@@ -18,4 +23,9 @@ processResources {
     }
 }
 
-
+eclipseJdt << {
+    File f = file('.settings/org.eclipse.core.resources.prefs')
+    f.write('eclipse.preferences.version=1\n')
+    f.append('encoding/<project>=')
+    f.append(defaultEncoding)
+}
