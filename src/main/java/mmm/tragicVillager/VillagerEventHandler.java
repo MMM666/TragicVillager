@@ -77,7 +77,7 @@ public class VillagerEventHandler {
 				}
 				Item litem = lev.isBurning() ? TragicVillager.itemVillagerCooked : TragicVillager.itemVillagerRaw;
 				for (int l = 0; l < ldc; ++l) {
-					lev.func_145779_a(litem, 1);
+					lev.dropItem(litem, 1);
 				}
 			}
 		}

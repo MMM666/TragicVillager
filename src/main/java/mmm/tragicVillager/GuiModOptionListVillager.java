@@ -19,8 +19,8 @@ public class GuiModOptionListVillager extends GuiScrollingList {
 	public int fselect = -1;
 
 	public GuiModOptionListVillager(GuiIngameOptionsVillager parent) {
-		super(parent.field_146297_k, 150, parent.field_146295_m, 32,
-				parent.field_146295_m - 65 + 4, 10, 35);
+		super(parent.mc, 150, parent.width, 32,
+				parent.height - 65 + 4, 10, 35);
 		this.parent = parent;
 	}
 

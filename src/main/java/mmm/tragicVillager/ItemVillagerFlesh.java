@@ -21,7 +21,7 @@ public class ItemVillagerFlesh extends ItemFood {
 			EntityPlayer par3EntityPlayer) {
 		if (par2World.isRemote) {
 //			par3EntityPlayer.addChatMessage("message.xeu.eatVillager");
-			par3EntityPlayer.func_146105_b(new ChatComponentTranslation("message.tragicVillager.eatVillager"));
+			par3EntityPlayer.addChatMessage(new ChatComponentTranslation("message.tragicVillager.eatVillager"));
 		}
 		return super.onEaten(par1ItemStack, par2World, par3EntityPlayer);
 	}

@@ -1,33 +1,30 @@
-﻿村人に酷い事をするMOD TragicVillager 1.7.x Rev1
+���l�ɍ�����������MOD TragicVillager 1.7.x Rev1
 
 
-利用条件
-	・仮想と現実の区別がつく事。
-	・自分の欲望を制御できる事。
-	・自己責任で。
-	・ソースの利用はご自由に。
+���p����
+	�E���z�ƌ����̋�ʂ������B
+	�E�����̗~�]�𐧌�ł��鎖�B
+	�E���ȐӔC�ŁB
+	�E�\�[�X�̗��p�͂����R�ɁB
 
-導入方法
-	前提MODのはForgeです。
-	解凍前のzipファイルをmodディレクトリに入れて下さい。
+�������@
+	�O��MOD�̂�Forge�ł��B
+	�𓀑O��zip�t�@�C����mod�f�B���N�g���ɓ���ĉ������B
 
-設定
-	アイテムIDを２つ追加します。
-	変更は「cfg/tragicvillager.cfg」、
-	若しくはタイトル画面の「MOD」画面でTragicVillagerを選択し「Config」画面にて下さい。
-	現状では「Disable」機能はForge側で実装していないようなので使用できません。
+�ݒ�
+	�A�C�e��ID���Q�ǉ����܂��B
+	�ύX�́ucfg/tragicvillager.cfg�v�A
+	�Ⴕ���̓^�C�g����ʂ́uMOD�v��ʂ�TragicVillager��I�����uConfig�v��ʂɂĉ������B
+	����ł́uDisable�v�@�\��Forge���Ŏ������Ă��Ȃ��悤�Ȃ̂Ŏg�p�ł��܂���B
 
-注意
-	1.7.2-Forge998で作ってます。
-
-
-
-
-
-以下ネタバレ。
+����
+	1.7.2-Forge998�ō���Ă܂��B
 
 
 
+
+
+�ȉ��l�^�o���B
 
 
 
@@ -46,8 +43,11 @@
 
 
 
-効能
-	・村人に縄を掛けることができます。
-	・村人がアイテムをドロップするようになります。
-	・村人が交易品をドロップするようになります。
-	・村人が経験値をドロップするようになります。
+
+
+
+���\
+	�E���l�ɓ���|���邱�Ƃ��ł��܂��B
+	�E���l���A�C�e�����h���b�v����悤�ɂȂ�܂��B
+	�E���l�����Օi���h���b�v����悤�ɂȂ�܂��B
+	�E���l���o���l���h���b�v����悤�ɂȂ�܂��B
