@@ -90,7 +90,7 @@ public class VillagerEventHandler {
 				// 村人に経験値を設定
 				EntityLiving lev = (EntityLiving)pEvent.entity;
 				// randじゃなくて期待値で。
-				ReflectionHelper.setPrivateValue(EntityLiving.class, lev, 2, "experienceValue");
+				ReflectionHelper.setPrivateValue(EntityLiving.class, lev, 2, "experienceValue", "field_70728_aV");
 //				lev.experienceValue = 2;
 			}
 		}

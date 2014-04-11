@@ -1,4 +1,4 @@
-村人に酷い事をするMOD TragicVillager 1.7.x Rev1
+村人に酷い事をするMOD TragicVillager 1.7.2 Rev1
 
 
 利用条件
@@ -18,7 +18,7 @@
 	現状では「Disable」機能はForge側で実装していないようなので使用できません。
 
 注意
-	1.7.2-Forge998で作ってます。
+	1.7.2-Forge1047で作ってます。
 
 
 
